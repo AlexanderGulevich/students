@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPanel" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basisFx.service.CategoriesPanel">
+   <children>
+      <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+
+
+
+
+            <HBox alignment="CENTER" prefHeight="40.0" spacing="2.0" styleClass="transparent" stylesheets="@../css/colors.css">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="220.0" styleClass="all_side" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="50.0" prefWidth="170.0" stylesheets="@../css/colors.css">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" prefHeight="50.0" prefWidth="120.0" styleClass="font_contrastedRed" text="" textFill="WHITE">
+                                       <font>
+                                          <Font name="FontAwesome Regular" size="48.0" />
+                                       </font>
+                                       <stylesheets>
+                                          <URL value="@../css/fonts.css" />
+                                          <URL value="@../css/colors.css" />
+                                          <URL value="@../css/borders.css" />
+                                       </stylesheets>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="all_side" />
+                              <String fx:value="white" />
+                              <String fx:value="shawdow" />
+                           </styleClass>
+                        </VBox>
+                        <VBox fillWidth="false" prefHeight="50.0" prefWidth="220.0" styleClass="mediumBlue3">
+                           <children>
+                              <VBox prefHeight="50.0" prefWidth="220.0" styleClass="bottom_shawdow" stylesheets="@../css/borders.css">
+                                 <children>
+                                    <Label alignment="CENTER" opacity="0.79" prefHeight="50.0" prefWidth="222.0" text="Панель управления" textFill="WHITE">
+                                       <font>
+                                          <Font name="Roboto Bold" size="20.0" />
+                                       </font>
+                                       <stylesheets>
+                                          <URL value="@../css/colors.css" />
+                                          <URL value="@../css/fonts.css" />
+                                       </stylesheets>
+                                       <styleClass>
+                                          <String fx:value="darckBlue" />
+                                          <String fx:value="all_side" />
+                                          <String fx:value="font_white" />
+                                       </styleClass>
+                                       <VBox.margin>
+                                          <Insets left="-1.0" right="-1.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <stylesheets>
+                              <URL value="@../css/colors.css" />
+                              <URL value="@../css/borders.css" />
+                           </stylesheets>
+                           <VBox.margin>
+                              <Insets left="-1.0" right="-1.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <stylesheets>
+                        <URL value="@../css/borders.css" />
+                        <URL value="@../css/colors.css" />
+                     </stylesheets>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+
+         </children>
+         <stylesheets>
+            <URL value="@../css/colors.css" />
+            <URL value="@../css/borders.css" />
+         </stylesheets>
+      </VBox>
+   </children>
+
+
+
+
+
+
+
+   <stylesheets>
+      <URL value="@../css/styles.css" />
+      <URL value="@../css/colors.css" />
+   </stylesheets>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

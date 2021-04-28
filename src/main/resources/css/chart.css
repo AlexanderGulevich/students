@@ -1,0 +1,384 @@
+.coordinateLabel{
+  -fx-text-fill:#697886;
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 16;
+  -fx-padding: 0 0 0 20;
+}
+
+.root {
+
+
+
+/* CHART_COLOR_1: #f4622d;
+CHART_COLOR_2: #fba71b;
+CHART_COLOR_3: #57b757;
+CHART_COLOR_4: #41a9c9;
+CHART_COLOR_5: #4258c9;
+CHART_COLOR_6: #9a42c8;
+CHART_COLOR_7: #c84164;
+CHART_COLOR_8: #888888; */
+
+/*
+CHART_COLOR_1_TRANS_20: #f3622d33;
+CHART_COLOR_2_TRANS_20: #fba71b33;
+CHART_COLOR_3_TRANS_20: #57b75733;
+CHART_COLOR_4_TRANS_20: #41a9c933;
+CHART_COLOR_5_TRANS_20: #4258c933;
+CHART_COLOR_6_TRANS_20: #9a42c833;
+CHART_COLOR_7_TRANS_20: #c8416433;
+CHART_COLOR_8_TRANS_20: #88888833;
+
+CHART_COLOR_1_TRANS_70: #f3622db3;
+CHART_COLOR_2_TRANS_70: #fba71bb3;
+CHART_COLOR_3_TRANS_70: #57b757b3;
+CHART_COLOR_4_TRANS_70: #41a9c9b3;
+CHART_COLOR_5_TRANS_70: #4258c9b3;
+CHART_COLOR_6_TRANS_70: #9a42c8b3;
+CHART_COLOR_7_TRANS_70: #c84164b3;
+CHART_COLOR_8_TRANS_70: #888888b3; */
+/* #FFD23F */
+CHART_COLOR_1: #DE1A1A;
+CHART_COLOR_2: #FFD23F;
+CHART_COLOR_3: #348a7a;
+CHART_COLOR_4: #41a9c9;
+CHART_COLOR_5: #98CE00;
+CHART_COLOR_6: #5D576B;
+CHART_COLOR_7: #FF6321;
+CHART_COLOR_8: #2CA94F;
+
+
+
+CHART_COLOR_1_TRANS_20: #DE1A1A77;
+CHART_COLOR_2_TRANS_20: #FFFD8288;
+CHART_COLOR_3_TRANS_20: #348a7a77;
+CHART_COLOR_4_TRANS_20: #41a9c977;
+CHART_COLOR_5_TRANS_20: #98CE0077;
+CHART_COLOR_6_TRANS_20: #5D576B77;
+CHART_COLOR_7_TRANS_20: #FF632177;
+CHART_COLOR_8_TRANS_20: #2CA94F77;
+
+
+CHART_COLOR_1_TRANS_70: #DE1A1Ab9;
+CHART_COLOR_2_TRANS_70: #FFFD82b9;
+CHART_COLOR_3_TRANS_70: #348a7ab9;
+CHART_COLOR_4_TRANS_70: #41a9c9b9;
+CHART_COLOR_5_TRANS_70: #98CE00b9;
+CHART_COLOR_6_TRANS_70: #5D576Bb9;
+CHART_COLOR_7_TRANS_70: #FF6321b9;
+CHART_COLOR_8_TRANS_70: #2CA94Fb9;
+
+
+}
+/*******************************************************************************
+ *                                                                             *
+ * Charts                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+ .chart {
+     -fx-padding: 5px;
+ }
+ .chart-plot-background {
+      -fx-background-color:#f6f4f4;    /*  подложка графика*/
+      -fx-background-color:transparent;    /*  подложка графика*/
+ }
+ .chart-content {
+     -fx-padding: 10px;
+ }
+ .chart-title {
+     -fx-font-size: 10px;
+ }
+ .chart-legend {
+    -fx-background-color: transparent;
+    -fx-border-color: #f6f4f4;
+    -fx-border-width: 1;
+    /* -fx-background-insets: 0 0 -1 0, 0,1; */
+    /* -fx-background-radius: 4,4,3; */
+    -fx-padding: 10px;
+ }
+
+ /*******************************************************************************
+  *                                                                             *
+  * Axis                                                                        *
+  *                                                                             *
+  ******************************************************************************/
+
+ .axis {
+      AXIS_COLOR:  #647f8c;/*шкала  */
+     -fx-tick-label-font-size: 12;/* значения  */
+     -fx-tick-label-fill:  #436271;/*цвет значений  */
+ }
+ .axis:top {
+     -fx-border-color: transparent transparent AXIS_COLOR transparent;
+ }
+ .axis:right {
+     -fx-border-color: transparent transparent transparent AXIS_COLOR;
+ }
+ .axis:bottom {
+     -fx-border-color: AXIS_COLOR transparent transparent transparent;
+ }
+ .axis:left {
+     -fx-border-color: transparent AXIS_COLOR transparent transparent;
+ }
+
+.axis-label{
+  -fx-text-fill:#697886;
+  -fx-font-family: "Roboto Light";
+    -fx-font-size: 15;
+}
+
+ .axis:top > .axis-label,
+ .axis:left > .axis-label {
+     -fx-padding: 0 0 4px 0;
+ }
+ .axis:bottom > .axis-label,
+ .axis:right > .axis-label {
+     -fx-padding: 4px 0 0 0;
+ }
+ .axis-tick-mark,
+ .axis-minor-tick-mark {
+     -fx-fill: #ff3d00;
+     -fx-stroke: AXIS_COLOR;
+ }
+/*******************************************************************************
+ *                                                                             *
+ * ChartPlot                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-vertical-grid-lines {
+    -fx-stroke: derive(-fx-background,-10%);
+    -fx-stroke-dash-array: 0.25em, 0.25em;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: derive(-fx-background,-10%);
+    -fx-stroke-dash-array: 0.25em, 0.25em;
+}
+.chart-alternative-column-fill {
+    -fx-fill: null;
+    -fx-stroke: null;
+}
+.chart-alternative-row-fill {
+    -fx-fill: null;
+    -fx-stroke: null;
+}
+.chart-vertical-zero-line,
+.chart-horizontal-zero-line {
+    -fx-stroke: derive(-fx-text-background-color, 40%);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ScatterChart                                                                *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-symbol { /* solid circle */
+    -fx-background-color: CHART_COLOR_1;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+.default-color1.chart-symbol { /* solid square */
+    -fx-background-color: CHART_COLOR_2;
+    -fx-background-radius: 0;
+}
+.default-color2.chart-symbol { /* solid diamond */
+    -fx-background-color: CHART_COLOR_3;
+    -fx-background-radius: 0;
+    -fx-padding: 7px 5px 7px 5px;
+    -fx-shape: "M5,0 L10,9 L5,18 L0,9 Z";
+}
+.default-color3.chart-symbol { /* cross */
+    -fx-background-color: CHART_COLOR_4;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "M2,0 L5,4 L8,0 L10,0 L10,2 L6,5 L10,8 L10,10 L8,10 L5,6 L2,10 L0,10 L0,8 L4,5 L0,2 L0,0 Z";
+}
+.default-color4.chart-symbol { /* solid triangle */
+    -fx-background-color: CHART_COLOR_5;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "M5,0 L10,8 L0,8 Z";
+}
+.default-color5.chart-symbol { /* hollow circle */
+    -fx-background-color: CHART_COLOR_6, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+.default-color6.chart-symbol { /* hollow square */
+    -fx-background-color: CHART_COLOR_7, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 0;
+}
+.default-color7.chart-symbol { /* hollow diamond */
+    -fx-background-color: CHART_COLOR_8, white;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 2.5;
+    -fx-padding: 7px 5px 7px 5px;
+    -fx-shape: "M5,0 L10,9 L5,18 L0,9 Z";
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * LineChart                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-line-symbol {
+    -fx-background-color: CHART_COLOR_1, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+.chart-series-line {
+    -fx-stroke: CHART_COLOR_1;
+    -fx-stroke-width: 3px;
+}
+.default-color0.chart-line-symbol { -fx-background-color: CHART_COLOR_1, white; }
+.default-color1.chart-line-symbol { -fx-background-color: CHART_COLOR_2, white; }
+.default-color2.chart-line-symbol { -fx-background-color: CHART_COLOR_3, white; }
+.default-color3.chart-line-symbol { -fx-background-color: CHART_COLOR_4, white; }
+.default-color4.chart-line-symbol { -fx-background-color: CHART_COLOR_5, white; }
+.default-color5.chart-line-symbol { -fx-background-color: CHART_COLOR_6, white; }
+.default-color6.chart-line-symbol { -fx-background-color: CHART_COLOR_7, white; }
+.default-color7.chart-line-symbol { -fx-background-color: CHART_COLOR_8, white; }
+.default-color0.chart-series-line { -fx-stroke: CHART_COLOR_1; }
+.default-color1.chart-series-line { -fx-stroke: CHART_COLOR_2; }
+.default-color2.chart-series-line { -fx-stroke: CHART_COLOR_3; }
+.default-color3.chart-series-line { -fx-stroke: CHART_COLOR_4; }
+.default-color4.chart-series-line { -fx-stroke: CHART_COLOR_5; }
+.default-color5.chart-series-line { -fx-stroke: CHART_COLOR_6; }
+.default-color6.chart-series-line { -fx-stroke: CHART_COLOR_7; }
+.default-color7.chart-series-line { -fx-stroke: CHART_COLOR_8; }
+
+/*******************************************************************************
+ *                                                                             *
+ * AreaChart                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-area-symbol {
+    -fx-background-color: CHART_COLOR_1, white;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 4px; /* makes sure this remains circular */
+    -fx-padding: 3px;
+}
+.default-color0.chart-area-symbol { -fx-background-color: CHART_COLOR_1, white; }
+.default-color1.chart-area-symbol { -fx-background-color: CHART_COLOR_2, white; }
+.default-color2.chart-area-symbol { -fx-background-color: CHART_COLOR_3, white; }
+.default-color3.chart-area-symbol { -fx-background-color: CHART_COLOR_4, white; }
+.default-color4.chart-area-symbol { -fx-background-color: CHART_COLOR_5, white; }
+.default-color5.chart-area-symbol { -fx-background-color: CHART_COLOR_6, white; }
+.default-color6.chart-area-symbol { -fx-background-color: CHART_COLOR_7, white; }
+.default-color7.chart-area-symbol { -fx-background-color: CHART_COLOR_8, white; }
+.chart-series-area-line {
+    -fx-stroke: CHART_COLOR_1;
+    -fx-stroke-width: 1px;
+}
+.default-color0.chart-series-area-line { -fx-stroke: CHART_COLOR_1; }
+.default-color1.chart-series-area-line { -fx-stroke: CHART_COLOR_2; }
+.default-color2.chart-series-area-line { -fx-stroke: CHART_COLOR_3; }
+.default-color3.chart-series-area-line { -fx-stroke: CHART_COLOR_4; }
+.default-color4.chart-series-area-line { -fx-stroke: CHART_COLOR_5; }
+.default-color5.chart-series-area-line { -fx-stroke: CHART_COLOR_6; }
+.default-color6.chart-series-area-line { -fx-stroke: CHART_COLOR_7; }
+.default-color7.chart-series-area-line { -fx-stroke: CHART_COLOR_8; }
+.chart-series-area-fill {
+    -fx-stroke: null;
+    -fx-fill: CHART_COLOR_1_TRANS_20;
+}
+.default-color0.chart-series-area-fill { -fx-fill: CHART_COLOR_1_TRANS_20; }
+.default-color1.chart-series-area-fill { -fx-fill: CHART_COLOR_2_TRANS_20; }
+.default-color2.chart-series-area-fill { -fx-fill: CHART_COLOR_3_TRANS_20; }
+.default-color3.chart-series-area-fill { -fx-fill: CHART_COLOR_4_TRANS_20; }
+.default-color4.chart-series-area-fill { -fx-fill: CHART_COLOR_5_TRANS_20; }
+.default-color5.chart-series-area-fill { -fx-fill: CHART_COLOR_6_TRANS_20; }
+.default-color6.chart-series-area-fill { -fx-fill: CHART_COLOR_7_TRANS_20; }
+.default-color7.chart-series-area-fill { -fx-fill: CHART_COLOR_8_TRANS_20; }
+.area-legend-symbol {
+    -fx-padding: 6px;
+    -fx-background-radius: 6px; /* makes sure this remains circular */
+    -fx-background-insets: 0, 3;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * BarChart                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-bar {
+    -fx-bar-fill: CHART_COLOR_1;
+    -fx-background-color:   linear-gradient(to right,
+                                derive(-fx-bar-fill, -4%),
+                                derive(-fx-bar-fill, -1%),
+                                derive(-fx-bar-fill, 0%),
+                                derive(-fx-bar-fill, -1%),
+                                derive(-fx-bar-fill, -6%)
+                              );
+    -fx-background-insets: 0;
+}
+.chart-bar.negative {
+    -fx-background-insets: 1 0 0 0;
+}
+.bar-chart:horizontal .chart-bar {
+    -fx-background-insets: 0 0 0 1;
+}
+.bar-chart:horizontal .chart-bar,
+.stacked-bar-chart:horizontal .chart-bar {
+    -fx-background-color:   linear-gradient(to bottom,
+                                derive(-fx-bar-fill, -4%),
+                                derive(-fx-bar-fill, -1%),
+                                derive(-fx-bar-fill, 0%),
+                                derive(-fx-bar-fill, -1%),
+                                derive(-fx-bar-fill, -6%)
+                              );
+}
+.default-color0.chart-bar { -fx-bar-fill: CHART_COLOR_1; }
+.default-color1.chart-bar { -fx-bar-fill: CHART_COLOR_2; }
+.default-color2.chart-bar { -fx-bar-fill: CHART_COLOR_3; }
+.default-color3.chart-bar { -fx-bar-fill: CHART_COLOR_4; }
+.default-color4.chart-bar { -fx-bar-fill: CHART_COLOR_5; }
+.default-color5.chart-bar { -fx-bar-fill: CHART_COLOR_6; }
+.default-color6.chart-bar { -fx-bar-fill: CHART_COLOR_7; }
+.default-color7.chart-bar { -fx-bar-fill: CHART_COLOR_8; }
+.bar-legend-symbol {
+    -fx-padding: 8px;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * PieChart                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-pie {
+    -fx-pie-color: CHART_COLOR_1;
+    -fx-background-color: radial-gradient(radius 100%, derive(-fx-pie-color,20%), derive(-fx-pie-color,-10%));
+    -fx-background-insets: 1;
+    -fx-border-color: -fx-background;
+}
+.chart-pie-label {
+    -fx-padding: 3px;
+    -fx-fill: -fx-text-base-color;
+}
+.chart-pie-label-line {
+    -fx-stroke: derive(-fx-background,-20%);
+}
+.default-color0.chart-pie { -fx-pie-color: CHART_COLOR_1; }
+.default-color1.chart-pie { -fx-pie-color: CHART_COLOR_2; }
+.default-color2.chart-pie { -fx-pie-color: CHART_COLOR_3; }
+.default-color3.chart-pie { -fx-pie-color: CHART_COLOR_4; }
+.default-color4.chart-pie { -fx-pie-color: CHART_COLOR_5; }
+.default-color5.chart-pie { -fx-pie-color: CHART_COLOR_6; }
+.default-color6.chart-pie { -fx-pie-color: CHART_COLOR_7; }
+.default-color7.chart-pie { -fx-pie-color: CHART_COLOR_8; }
+.negative.chart-pie {
+    -fx-pie-color: transparent;
+    -fx-background-color: white;
+}
+.pie-legend-symbol.chart-pie {
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-border-color: null;
+}

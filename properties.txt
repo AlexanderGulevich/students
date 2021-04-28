@@ -1,0 +1,5 @@
+#Properties
+#Wed Apr 28 05:57:00 MSK 2021
+db_name=komdb
+db_folder=omts
+db_path=C\:/komfdb/

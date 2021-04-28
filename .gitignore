@@ -1,0 +1,25 @@
+/build/
+/dist/
+/xls/
+/lib/docs/
+/nbproject/
+/build.xml
+/output111.xlsx
+/output.xlsx
+/lib/jidefx-oss-master/module-examples/project files/netbeans/nbproject/private/
+/lib/jidefx-oss-master/.nb-gradle/
+/.nb-gradle/
+/.gradle/
+/.nb-gradle-properties
+gradle-app.setting
+!gradle-wrapper.jar
+db1.db  
+/database
+/.idea/*
+/.idea/
+.idea/
+idea
+/classes/
+/out/
+/log/
+/C:/

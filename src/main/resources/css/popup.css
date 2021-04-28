@@ -1,0 +1,58 @@
+#popupContentPanel{
+  -fx-border-width: 0 0 0.25 0 ;
+    -fx-border-color: #a79090;
+        -fx-background-color: #ffffff;
+}
+#popupTitlePanel{
+    -fx-background-color: transparent;
+      -fx-border-width: 0 0 0.25 0;
+        -fx-border-color: #a79090;
+}
+#PopupTitleText{
+  -fx-color: #62929d;
+  -fx-fill:#62929d;
+  -fx-text-fill: #62929d;
+}
+#ALERT_ICON{
+  -fx-text-fill: #62929d;
+  -fx-color: #62929d;
+  -fx-fill:#62929d;
+
+}
+#popupMessageTextPanel{
+}
+#PopupMessageText{
+}
+#PopupTextArea,
+#PopupTextArea:focused,
+#PopupTextArea:armed{
+      -fx-background-color: white;
+      -fx-border-width:  0  0.07  0  0.07 ;
+      -fx-border-color: #184f77;
+      -fx-color: #27525c;
+      -fx-fill:#27525c;
+      -fx-text-fill: #27525c;
+      -fx-background-radius: 0 ;
+      -fx-background-radius: 0;
+      -fx-background-insets: 0;
+      -fx-padding:0;
+
+}
+
+#PopupTextArea .scroll-pane,
+#PopupTextArea:focused>.scroll-pane{
+  -fx-background-color: white;
+  -fx-text-fill: #27525c;
+  -fx-background-radius: 0 ;
+  -fx-background-radius: 0;
+}
+#PopupTextArea:focused .content,
+#PopupTextArea .content
+{
+  -fx-background-radius: 0 ;
+  -fx-background-radius: 0;
+  /* -fx-background-insets: 0; */
+  /* -fx-padding:0; */
+  -fx-background-color: white;
+  -fx-text-fill: #27525c;
+}

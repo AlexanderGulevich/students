@@ -1,0 +1,87 @@
+#LEFT_SIDE_MENU_TEXT{
+   -fx-background-color: #c84164;
+}
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS{
+     -fx-text-fill:white;
+     -fx-alignment: center;
+    /* -fx-background-color:#003641; */
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    /* -fx-color:yellowgreen; */
+     -fx-pref-width: 60;
+     -fx-pref-height:50;
+    -fx-border-width: 0 0 0.2 0 ;
+   -fx-border-color: #619494;
+}
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS:armed,
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS_CLICKED{
+     -fx-text-fill:white;
+    -fx-background-color:#ff3d00;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+     -fx-pref-width: 60;
+     -fx-pref-height:50;
+}
+#HORIZONTAL_FLOW_MENU_PANEL{
+       -fx-background-color: #ffffff;
+        -fx-padding: 0  0 0 0.5;
+       -fx-border-width: 0   0   0.1    0.1;
+         -fx-border-color: #28385e;
+}
+#MAIN_MENU{
+     -fx-background-color: #0096C9;
+      -fx-fill:  #57b75733;
+}
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS:focused{
+     -fx-text-fill:white;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    /* -fx-color:yellowgreen; */
+     -fx-pref-width: 60;
+     -fx-pref-height:50;
+}
+#LEFT_SIDE_MENU_COMMON_TEXT{
+    -fx-fill:#f1f1f1;
+    -fx-opacity:0.6;
+}
+.LEFT_SIDE_MENU_HORIZONTAL_BUTTONS{
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-background-color:white;
+    -fx-background-color:transparent;
+    -fx-padding:3 10 3 10;
+    -fx-padding:0 10 0 10;
+    -fx-text-fill:#22515B;
+    -fx-text-fill:#FFFFFF;
+    -fx-text-fill:#d9dbec;
+    -fx-pref-height: 30;
+  -fx-border-width: 0.1  0.1   0    0.1;
+-fx-border-width:  0    0.1;
+    -fx-border-color: white white  white white;
+    -fx-border-style:solid ;
+    -fx-font-size: 17;
+}
+
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS_FIRST{
+
+  -fx-border-width: 0  0.1   0    0;
+}
+/* .LEFT_SIDE_MENU_HORIZONTAL_BUTTONS:armed, */
+.LEFT_SIDE_MENU_HORIZONTAL_BUTTONS_CLICKED{
+       -fx-font-size: 17;
+      /* -fx-text-fill: #d96844; */
+      -fx-text-fill: #d9dbec;
+      -fx-text-fill: #1ac7f5;
+      -fx-padding:3 10 3 10;
+      -fx-pref-height: 50;
+    -fx-border-width: 0.1  0.1   0.1    0.1;
+    -fx-border-color: #28385e;
+    -fx-border-color: #4d75b1;
+}

@@ -1,0 +1,64 @@
+#IMG_ICON{
+    -fx-pref-height: 40;
+        -fx-background-image: url("../../img/logo33.png");
+      -fx-background-size:67;
+      -fx-background-image-repeat:  no-repeat;
+      -fx-background-position:center;
+}
+#TEXT_ICON_ANCHOR{}
+#MAIN_CONTENT_ANCHOR{
+    -fx-background-color: #ffffff;
+     -fx-padding:0;
+        -fx-border-width: 0 0.3 0.3 0.2;
+        -fx-border-insets:1 1 1 1;
+        -fx-border-color: #3e4658;
+}
+#TRANSPARENT_ROOT{
+      -fx-background-color: transparent;
+      -fx-insets:5;
+}
+#TopVisiblePanel{
+     /* -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 3, 0.05, 0.0, 0.0); */
+         /* -fx-effect: dropshadow(gaussian ,#555555 , 10, 0, 0.5, 0.5); */
+            /* -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 5, 0, 0.0, 0.0); */
+               -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 10, 0, 0.0, 0.0);
+   -fx-background-color:  #ffffff;
+
+      /* -fx-border-width: 0.1;
+      -fx-border-color: #3e4658; */
+
+         /* -fx-border-width: 0.2;
+         -fx-border-color: #1e2430; */
+}
+/* #TopVisiblePanel,
+#MAIN_CONTENT_ANCHOR,
+#HORIZONTAL_FLOW_MENU_PANEL{
+       -fx-background-color:  #F4F4F4;
+} */
+#PROGRAMM_NAME{
+    /* -fx-text-fill: #ffffff;
+    -fx-color: #ffffff;
+    -fx-fill:#ffffff; */
+    /* -fx-font-size: 50; */
+    /* -fx-font-family: "Roboto Bold"; */
+}
+/* #TITLE_WINDOW_TEXT{
+    -fx-fill:  #9ca8af;
+} */
+#ROOT_TEXT_ICON{
+    -fx-fill:  #D9F0F2;
+    -fx-border-radius:100;
+    -fx-border-color:red;
+    -fx-border-style: solid;
+}
+
+#TITLE_PANEL{
+    /* -fx-background-color:  #436271; */
+ -fx-border-width: 0 0 1 0;
+ -fx-border-color: darkgoldenrod darkgoldenrod #dce0e1 darkgoldenrod;
+}
+/* #TITLE_WINDOW_IMG{
+ -fx-background-image: url("../../img/logo3.png");
+-fx-pref-width:170;
+-fx-pref-height:32;
+} */

@@ -1,0 +1,184 @@
+
+.COMBOBOX_BFx_editable .combo-box > .list-cell {
+    -fx-background:#ffffff ;
+    -fx-background-color:#ffffff ;
+    -fx-text-fill:#003641 ;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-radius: 0;
+      -fx-background-radius: 0 3 3 0, 0 2 2 0, 0 1 1 0;
+        -fx-padding: 0.5em 0.667em 0.5em 0.833333em; /* 6 8 6 10 */
+        -fx-border-radius:0;
+          -fx-background-insets: 0, 0, 0, 0;
+          -fx-background-radius: 0;
+          -fx-border-width: 0;
+          -fx-border-color: #7f7991;
+
+}
+.COMBOBOX_BFx_editable .combo-box-base > .arrow-button {
+    -fx-padding: 0.5em 0.667em 0.5em 0.833333em; /* 6 8 6 10 */
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background:#ffffff ;
+        -fx-background-color:#ffffff ;
+        -fx-border-width: 0 0 0 0;
+      -fx-border-color: #7f7991;
+      -fx-background-radius: 0;
+}
+.COMBOBOX_BFx_editable  > .arrow-button {
+    -fx-background-color: #ffffff;
+     -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-radius: 0;
+      -fx-border-width: 0 0 0 0;
+      -fx-border-color: #9da4a8;
+      -fx-background-radius: 0;
+      -fx-border-radius:0;
+}
+.COMBOBOX_BFx_editable > .text-field{
+    -fx-background-insets:0;
+    -fx-background-radius: 0;
+      -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-radius: 0;
+      -fx-background-color:#ffffff;
+      -fx-border-width: 0.5;
+      -fx-background-radius: 0;
+      -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-radius: 0;
+
+      -fx-text-fill:#7b8694;
+    -fx-font-family: "Roboto Light";
+      -fx-font-size: 12;
+}
+.COMBOBOX_BFx_editable .combo-box-popup .text{
+  -fx-background-radius: 0;
+  -fx-border-radius:0;
+  -fx-background-insets: 0, 0, 0, 0;
+  -fx-background-radius: 0;
+  -fx-background-color:#ffffff;
+  -fx-border-width: 0.5;
+  -fx-border-color: #7f7991;
+      -fx-background-color:red;
+      -fx-background-radius: 0;
+      -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-radius: 0;
+}
+.COMBOBOX_BFx_editable .combo-box-popup > .list-view {
+    -fx-background-color:#ffffff;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(gaussian ,#605d5d , 2, 0, 0.5, 0.5);
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-text-fill:#2f4a6f;
+  -fx-font-family: "Roboto Light";
+    -fx-font-size: 12;
+}
+.COMBOBOX_BFx_editable .combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-padding: 4 0 4 5;
+    -fx-background:#ffffff ;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#ffffff;
+    -fx-border-width: 0.3;
+    -fx-border-color: #dbdee4;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-text-fill:#2f4a6f;
+    -fx-text-fill:#a6b7cf;
+  -fx-font-family: "Roboto Light";
+
+}
+
+.COMBOBOX_BFx_editable .combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+    -fx-background: #edf4f4;
+    -fx-background-color: #edf4f4;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-text-fill:#2f4a6f;
+  -fx-font-family: "Roboto Light";
+  -fx-border-width: 0.4;
+  -fx-border-color: #dbdee4;
+}
+.COMBOBOX_BFx_editable .combo-box-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected,
+.combo-box-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover {
+    -fx-background: #f5f7fb;
+    -fx-background-color: #f5f7fb;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-text-fill:#2f4a6f;
+  -fx-font-family: "Roboto Light";
+  -fx-border-width: 0.4;
+  -fx-border-color: #dbdee4;
+}
+.COMBOBOX_BFx_editable .combo-box-popup > .list-view > .placeholder > .label {
+    -fx-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-background:#ffffff ;
+      -fx-background-radius: 0;
+      -fx-border-radius:0;
+      -fx-background-insets: 0, 0, 0, 0;
+      -fx-background-color:#ffffff;
+      -fx-border-width: 0;
+      -fx-border-color: #ffffff;
+      -fx-text-fill:#2f4a6f;
+    -fx-font-family: "Roboto Light";
+    -fx-border-width: 0.4;
+    -fx-border-color: #dbdee4;
+  }
+
+    .COMBOBOX_BFx_editable  {
+  -fx-background-color:#ffffff;
+  -fx-border-color: #cfc0c0;
+  -fx-background-insets: 0, 0, 0, 0;
+  -fx-border-width: 0.3  0.3  0.3  0.3 ;
+  -fx-border-style: solid;
+  -fx-border-color:#494c50;
+    -fx-padding: 0 0 0 10;
+    -fx-insets: 0 0 0 10;
+
+  }
+
+
+ .COMBOBOX_BFx_editable .cell,
+ .COMBOBOX_BFx_editable  .indexed-cell,
+ .COMBOBOX_BFx_editable .list-cell{
+
+      -fx-text-fill:#2f4a6f;
+         /* -fx-text-fill:#BFBFBF; */
+   -fx-font-family: "Roboto Light";
+     -fx-font-size: 14;
+     -fx-padding: 0 0 0 10;
+     -fx-padding: 5 0 5 0;
+     -fx-insets: 0 0 0 10;
+ }
+
+
+
+  .COMBOBOX_BFx_editable .text-input,
+   .COMBOBOX_BFx_editable  .text-field{
+     -fx-background-color:#ffffff;
+     -fx-border-color: #ffffff;
+     -fx-background-insets: 0, 0, 0, 0;
+     -fx-border-width: 0.3  0.3  0.3  0.3 ;
+     -fx-border-style: none;
+     -fx-border-color:#ffffff;
+   }

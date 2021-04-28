@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basisFx.service.WindowServiceMain_v1">
+   <children>
+
+
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+
+
+             <AnchorPane id="TITLE_PANEL" fx:id="titleAnchor" prefHeight="90.0" prefWidth="200.0" VBox.vgrow="NEVER">
+               <stylesheets>
+                  <URL value="@../css/windows.css" />
+                  <URL value="@../css/leftSideMenu.css" />
+                  <URL value="@../css/colors.css" />
+                  <URL value="@../css/borders.css" />
+               </stylesheets>
+               <children>
+                  <Label id="PROGRAMM_NAME" fx:id="companyNameText" layoutX="11.0" layoutY="3.0" stylesheets="@../css/fonts.css" text="KOMFORT" textFill="WHITE" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label id="LEFT_SIDE_MENU_COMMON_TEXT" fx:id="commonMenuLabel" alignment="BOTTOM_LEFT" layoutX="161.0" layoutY="8.0" prefHeight="30.0" prefWidth="473.0" text="/  Управление затратами и выработкой за день" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font name="Roboto Light" size="18.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../css/fonts.css" />
+                        <URL value="@../css/leftSideMenu.css" />
+                     </stylesheets>
+                  </Label>
+                  <HBox fx:id="horisontalMenuButHolder" alignment="CENTER_LEFT" layoutY="40.0" prefHeight="50.0" prefWidth="496.0" stylesheets="@../css/borders.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="mediumBlue" />
+                  <String fx:value="bottom_shawdow" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane styleClass="lightGrey" stylesheets="@../css/colors.css" VBox.vgrow="ALWAYS">
+               <children>
+      
+            
+                         <AnchorPane fx:id="mainContentAnchor" prefHeight="0.0" styleClass="transparent" stylesheets="@../css/colors.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+
+
+         </children>
+      </VBox>
+
+
+
+
+
+
+       <AnchorPane fx:id="verticalMenuAnchor" layoutX="14.0" layoutY="66.0" prefHeight="0.0" prefWidth="60.0" style="-fx-pref-width: 60;" styleClass="darckBlue" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <stylesheets>
+            <URL value="@../css/leftSideMenu.css" />
+            <URL value="@../css/panels.css" />
+            <URL value="@../css/windows.css" />
+            <URL value="@../css/colors.css" />
+         </stylesheets>
+         <children>
+            <AnchorPane fx:id="leftButAnchor" layoutX="-70.0" layoutY="46.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox fx:id="vButHolder" prefHeight="200.0" prefWidth="100.0" stylesheets="@../css/colors.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0" />
+                  <AnchorPane id="IMG_ICON" fx:id="iconAnchor" blendMode="HARD_LIGHT" layoutX="2.0" layoutY="358.0" prefHeight="200.0" prefWidth="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="5.0">
+                     <stylesheets>
+                        <URL value="@../css/leftSideMenu.css" />
+                        <URL value="@../css/windows.css" />
+                     </stylesheets></AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

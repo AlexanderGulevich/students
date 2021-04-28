@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basisFx.service.ServicePanelRightControls">
+   <children>
+      <AnchorPane layoutX="127.0" layoutY="74.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="rightVbox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="220.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                        <Line endX="100.69734191894531" endY="10.585786819458008" opacity="0.0" startX="-100.31489562988281" startY="10.585787773132324" stroke="#9e0000">
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Line>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="filtrerTitle" prefHeight="51.0" prefWidth="220.0" text="   ФИЛЬТРАЦИЯ ДАННЫХ" textFill="#42475799">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                        <Line endX="100.69734191894531" endY="10.585786819458008" opacity="0.09" startX="-105.22663879394531" startY="10.58541488647461" stroke="#2c2ce4">
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Line>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="220.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <ComboBox fx:id="combobox" prefHeight="27.0" prefWidth="191.0" promptText="hjmhmh" styleClass="COMBOBOX_BFx" stylesheets="@../css/combobox.css" />
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" HBox.hgrow="ALWAYS" />
+                        <Line endX="100.69734191894531" endY="10.585786819458008" opacity="0.09" startX="-106.950927734375" startY="10.585071563720703" stroke="#2c2ce4">
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Line>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="220.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <DatePicker fx:id="dateStart" prefHeight="27.0" prefWidth="191.0" promptText="Начало периода" styleClass="DATEPICKER_BFx">
+                           <stylesheets>
+                              <URL value="@../css/dataPicker.css" />
+                           </stylesheets>
+                        </DatePicker>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <DatePicker fx:id="dateEnd" prefHeight="27.0" prefWidth="191.0" promptText="Конец периода" styleClass="DATEPICKER_BFx">
+                           <stylesheets>
+                              <URL value="@../css/dataPicker.css" />
+                           </stylesheets>
+                        </DatePicker>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="250.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="okBut" mnemonicParsing="false" pickOnBounds="false" prefHeight="36.0" prefWidth="100.0" scaleShape="false" style="-fx-padding: 7 9; -fx-background-color: #FFFFFF; -fx-max-width: 80;" styleClass="all_side" text="Отобразить" textFill="#697886">
+                           <font>
+                              <Font name="Font Awesome 5 Free Solid" size="11.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@../css/buttons.css" />
+                              <URL value="@../css/styles.css" />
+                              <URL value="@../css/borders.css" />
+                           </stylesheets>
+                        </JFXButton>
+                        <Region prefHeight="200.0" prefWidth="15.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="220.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="109.0" HBox.hgrow="ALWAYS" />
+                        <Line endX="100.69734191894531" endY="10.585786819458008" opacity="0.09" startX="-97.04283142089844" startY="10.5856294631958" stroke="#2c2ce4">
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Line>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="220.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+<!--                        <FontAwesomeIconView fill="#ababab87" size="99" strokeWidth="200.0" style="-fx-text-alignment: center; -fx-text-insets: 0; -fx-padding: 0;" text="" wrappingWidth="116.57142627239227" />-->
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="labelAnchor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="commonLabelName" style="-fx-font-size: 25;" styleClass="LABEL_COMMON" stylesheets="@../css/panels.css" text="commonLabelName" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="chartAnchor" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="50.0">
+               <stylesheets>
+                  <URL value="@../css/colors.css" />
+                  <URL value="@../css/borders.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="white" />
+                  <String fx:value="all_side" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+#TARGET_PANEL{
+      -fx-background-color: transparent;
+         -fx-padding:0 0 0 0;
+}
+
+#WindowButtonsPanel{
+  -fx-background-color: transparent;
+    -fx-border-width: 0 0 0.2 0;
+      -fx-border-color: #a79090;
+}
+.LABEL_COMMON{
+  -fx-common:#697886;
+  -fx-text-fill: -fx-common;
+  -fx-color: -fx-common;
+  -fx-fill:-fx-common;
+  -fx-fill:-fx-common;
+  -fx-text-fill:-fx-common;
+  -fx-font-weight: bold;
+  -fx-font-family: "Roboto Bold";
+}
+#LABEL_COMMON_GRID_TEXT{
+  -fx-common:#697886;
+  -fx-text-fill: -fx-common;
+  -fx-color: -fx-common;
+  -fx-fill:-fx-common;
+  -fx-fill:-fx-common;
+  -fx-text-fill:-fx-common;
+  -fx-font-size: 27;
+  -fx-font-weight: bold;
+  -fx-font-family: "Roboto Bold";
+}
+#LABEL_TEXT{
+      -fx-label:#697886;
+            -fx-text-fill:  -fx-label;
+            -fx-color:      -fx-label;
+            -fx-fill:       -fx-label;
+            -fx-fill:       -fx-label;
+            -fx-text-fill:  -fx-label;
+}

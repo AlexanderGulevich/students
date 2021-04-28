@@ -1,0 +1,28 @@
+
+.scroll-pane ,
+.scroll-pane:focused,
+.scroll-pane:armed{
+      -fx-background-color: white;
+      -fx-border-width:  0  0.07  0  0.07 ;
+      -fx-border-color: #184f77;
+      -fx-color: #27525c;
+      -fx-fill:#27525c;
+      -fx-text-fill: #27525c;
+      -fx-background-radius: 0 ;
+      -fx-background-radius: 0;
+      -fx-background-insets: 0;
+      -fx-padding:0;
+
+      -fx-font-family: "Roboto Light";
+      -fx-font-size: 25;
+
+      -fx-border-width:  0.2   ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+
+}
+.scroll-pane .scroll-bar {
+
+  /* -fx-background-color:#bec0da; */
+  -fx-border-width:  0 0 0 0  ;
+}

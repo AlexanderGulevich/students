@@ -1,0 +1,15 @@
+
+
+
+#PRELOADER_VISIBLE_ROOT{
+   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 10, 0, 0.0, 0.0);
+   -fx-background-color: #FFFFFF;
+   -fx-background-image: url("../img/preloader.png");
+
+}
+
+#PRELOADER_TRANSPARENT_ROOT{
+
+      -fx-background-color: transparent;
+
+}

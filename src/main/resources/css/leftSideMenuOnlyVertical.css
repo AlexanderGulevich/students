@@ -1,0 +1,53 @@
+#LEFT_SIDE_MENU_TEXT{
+   -fx-background-color: #c84164;
+}
+.only_vertical_menu_BUTTONS{
+     -fx-text-fill:white;
+     -fx-alignment: center;
+    /* -fx-background-color:#003641; */
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    /* -fx-color:yellowgreen; */
+    -fx-pref-height: 70;
+    -fx-pref-width:100;
+    -fx-border-width: 0 0 0.2 0 ;
+   -fx-border-color: #619494;
+}
+.only_vertical_menu_BUTTONS:armed,
+.only_vertical_menu_BUTTONS_CLICKED{
+     -fx-text-fill:white;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    -fx-pref-height: 70;
+    -fx-pref-width:100;
+    -fx-background-color:  yellowgreen;
+
+}
+
+#MAIN_MENU{
+     -fx-background-color: #0096C9;
+      -fx-fill:  #57b75733;
+}
+.only_vertical_menu_BUTTONS:focused{
+     -fx-text-fill:white;
+    -fx-background-radius: 0;
+    -fx-border-radius:0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-background-radius: 0;
+    /* -fx-color:yellowgreen; */
+    -fx-pref-height: 70;
+    -fx-pref-width:100;
+}
+#LEFT_SIDE_MENU_COMMON_TEXT{
+    -fx-fill:#f1f1f1;
+    -fx-opacity:0.6;
+}
+
+
+.LEFT_SIDE_MENU_VERTICAL_BUTTONS_FIRST{
+
+  -fx-border-width: 0  0.1   0    0;
+}

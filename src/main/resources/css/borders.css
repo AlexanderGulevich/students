@@ -1,0 +1,43 @@
+.bottom{
+      -fx-border-width: 0  0  0.3  0 ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+.bottom_right{
+      -fx-border-width: 0  0.3  0.3  0 ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+.all_side{
+      -fx-border-width:  0.3   ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+
+.right{
+      -fx-border-width:  0 0.3 0 0   ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+.top{
+      -fx-border-width:   0.3 0 0 0   ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+.left_side{
+      -fx-border-width:  0 0 0.3 0  ;
+      -fx-border-style: solid;
+      -fx-border-color:#494c50;
+}
+.bottom_shawdow{
+
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 5, 0, 0.0, 0.0);
+}
+.shawdow{
+
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 5, 0, 0.0, 0.0);
+}
+.shawdowNON{
+
+       -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0), 0, 0, 0.0, 0.0);
+}

@@ -1,0 +1,99 @@
+.scroll-bar{
+-fx-pref-width: 10;
+}
+.track-background{}
+.increment-button,.decrement-button{
+-fx-background-color:transparent;
+/* -fx-pref-width: 15;
+-fx-pref-height:  15; */
+}
+.track{/*Вся дорожка */
+  -fx-padding:0 1 1 0;
+  -fx-background-insets:  1 1 1 0;
+  -fx-background:transparent;
+  -fx-background-color:#e9ebff;
+  -fx-border-width:  0.5 0.5 0.5 0.5  ;
+
+  -fx-effect: dropshadow(gaussian ,#605d5d , 1, 0, 0.1, 0.1);
+}
+.scroll-bar:vertical {
+  -fx-insets:30;
+    -fx-background-insets: 0, 0;
+}
+.scroll-bar:focused {
+        -fx-background-insets: 0, 0;
+}
+.scroll-bar:vertical:focused {
+
+}
+.scroll-bar > .thumb,.scroll-bar:vertical > .thumb {/* двигающаяся полоска */
+    -fx-background-insets: 2 2 2 2 ;
+    /* -fx-border-width:  0.5 0.5 0.5 0.5  ; */
+    -fx-border-width:  0 ;
+    /* -fx-border-color: rgba(#b6a5a5, 0.83)  ; */
+    -fx-background-radius: 0;
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(gaussian ,#605d5d , 2, 0, 0.5, 0.5);
+}
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button ,
+.scroll-bar:vertical > .increment-button,
+.scroll-bar:vertical > .decrement-button{
+    -fx-color: #a7cef2;
+    -fx-padding: 0;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+
+}
+.scroll-bar > .increment-button:hover > .increment-arrow,
+.scroll-bar > .decrement-button:hover > .decrement-arrow {
+
+}
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+
+}
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+-fx-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "M1.929,4L0.5,3.998L4.5,1l4,2.998L7.07,4L4.5,2.024L1.929,4z";
+    -fx-effect: dropshadow(two-pass-box , -fx-shadow-highlight-color, 1, 0.0 , 0, 1.4);
+    -fx-pref-width: 0;
+    -fx-pref-height:  0;
+
+}
+.scroll-bar:vertical > .increment-button > .increment-arrow {
+  -fx-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "M7.071,1L8.5,1.002L4.5,4l-4-2.998L1.93,1L4.5,2.976L7.071,1z";
+    -fx-effect: dropshadow(two-pass-box , -fx-shadow-highlight-color, 1, 0.0 , 0, 1.4);
+    -fx-pref-width: 0;
+    -fx-pref-height:  0;
+
+
+}
+#TABLE *.scroll-bar:horizontal *.increment-button,
+#TABLE *.scroll-bar:horizontal *.decrement-button ,
+  .scroll-bar > .thumb,.scroll-bar:horizontal > .thumb
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-width:  0  ;
+    -fx-border-color: transparent  ;
+    -fx-pref-width: 0;
+    -fx-pref-height:  0;
+}
+#TABLE *.scroll-bar:horizontal *.increment-arrow,
+#TABLE *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+    -fx-pref-width: 0;
+    -fx-pref-height:  0;
+}

@@ -1,0 +1,52 @@
+@startuml
+
+abstract class MenuComponent
+ class MenuComposite
+ class MenuLeaf
+
+MenuComponent     <|-- MenuComposite
+MenuComponent     <|-- MenuLeaf
+
+
+class MenuComponent {
+ #name : String
+ #fontSymbol : String
+ #fontsStore : FontsStore
+ #parent : MenuComponent
+ #isActive : boolean
+ #isDivider : boolean
+ #target : Target
+ #fontSize : double
+
+
+ {abstract}  #isComposit() : boolean
+ -getParent() : MenuComponent
+
+}
+
+class MenuComposite {
+ #child : ArrayList<MenuComponent>
+ #parent : MenuComponent
+
+ #isComposit() : boolean
+ +add(сomponent : MenuComponent) : void
+ +remove(сomponent : MenuComponent) : void
+ +getChild() : ArrayList<MenuComponent>
+
+}
+class MenuLeaf {
+
+ #isComposit() : boolean
+
+}
+
+
+
+'class MenuCreator
+'class LeftSideMenuRepresent
+'class MenuComponent
+'class MenuComposite
+
+'MenuRepresent     <|--  LeftSideMenuRepresent
+
+@enduml

@@ -1,0 +1,47 @@
+.main_panel_bcqrd{
+      /* -fx-background-image: url("../../img/1.jpg");
+      -fx-background-image-repeat:  no-repeat;
+      -fx-background-position:CENTER_LEFT;
+      -fx-background-size:    stretch; */
+
+}
+.root {
+    /* -fx-base: #ececec;
+    -fx-background: derive(-fx-base,26.4%);
+   -fx-control-inner-background: derive(-fx-base,80%);
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background,-2%);
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: #333;
+    -fx-light-text-color: white;
+   -fx-accent: #a2c8e3;
+    -fx-default-button: #ABD8ED;
+    -fx-focus-color: #856563; */
+    /* -fx-faint-focus-color:#184f77; */
+
+
+
+
+   }
+/* .scroll-pane:focused,
+.split-pane:focused,
+.list-view:focused,
+.tree-view:focused,
+.table-view:focused,
+.tree-table-view:focused,
+.html-editor:contains-focus {
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: -1.4, -0.3, 1;
+    -fx-background-radius: 2, 0, 0;
+    -fx-border-color: transparent;
+    -fx-border-color: transparent;
+}
+/* ones with grey -fx-background not lighter -fx-control-inner-background */
+.scroll-pane,
+.split-pane {
+    /* -fx-background-color: -fx-box-border, -fx-background;
+        -fx-border-color: transparent; */
+}
+.scroll-pane:focused,
+.split-pane:focused {
+    /* -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-background; */
+}

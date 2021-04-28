@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="230.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basisFx.service.WindowServiceDatePicker">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="57.57143020629883" prefHeight="433.0" prefWidth="680.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <AnchorPane stylesheets="@../css/borders.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="dateLsabel" layoutX="22.0" layoutY="68.0" prefHeight="38.0" prefWidth="254.0" text="Label" textFill="#586363">
+                     <font>
+                        <Font name="Roboto Light" size="21.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="datePicker" layoutX="22.0" layoutY="21.0" prefHeight="30.0" prefWidth="234.0" styleClass="DATEPICKER_BFx" stylesheets="@../css/dataPicker.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="titleAnchor" layoutX="72.0" layoutY="7.0" prefHeight="46.0" prefWidth="680.0" styleClass="bottom" stylesheets="@../css/borders.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+<!--            <FontAwesomeIconView fill="#42606e93" layoutY="38.0" size="45" text="" />-->
+            <Label fx:id="title" layoutX="96.0" layoutY="4.0" prefHeight="38.0" prefWidth="335.0" stylesheets="@../css/borders.css" text="Выбор даты" textAlignment="RIGHT" textFill="#436270c1" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font name="Roboto Light" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-25.0" layoutY="129.0" prefHeight="50.0" styleClass="mediumBlue" stylesheets="@../css/colors.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton id="PANELS_BUTTON" fx:id="okBut" layoutX="406.0" layoutY="26.0" prefHeight="36.0" prefWidth="69.0" style="-fx-padding: 7 9; -fx-background-color: #FFFFFF; -fx-max-width: 80;" styleClass="all_side" text="ОК" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="8.0">
+               <font>
+                  <Font name="Font Awesome 5 Free Solid" size="11.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../css/buttons.css" />
+                  <URL value="@../css/styles.css" />
+                  <URL value="@../css/borders.css" />
+               </stylesheets>
+            </JFXButton>
+<!--            <FontAwesomeIconView fill="WHITE" layoutX="14.0" layoutY="45.0" size="50" text="" />-->
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
